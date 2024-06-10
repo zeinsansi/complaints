@@ -1,0 +1,10 @@
+version: '1'
+
+services:
+  complaints_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: complaints
+    ports:
+      - "8001:8001"
